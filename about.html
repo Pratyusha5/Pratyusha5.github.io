@@ -1,0 +1,273 @@
+<!Doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="letterdrop.js"></script>
+<style>
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-google-plus {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.navbar-text{
+font-size:20px;
+}
+
+.navbar { margin-bottom: 0px;}
+body { 
+    background-image: url("wr.jpg");
+    height:100%;
+    width:100%;
+    background-repeat:repeat;
+    display: compact;
+    margin: 0px;}
+h1{
+text-align:center;
+font-size:40px;
+font-family: "Times New Roman", Times, serif;
+text-transform: uppercase;
+text-shadow: 3px 2px black;
+letter-spacing: 1px;
+}
+h4{
+text-align:center;
+font-family: "Times New Roman", Times, serif;
+text-transform: uppercase;
+text-shadow: 3px 2px black;
+letter-spacing: 1px;
+}
+.nav h2{ 
+text-transform :uppercase;
+font-family: "Times New Roman", Times, serif;
+text-shadow: 3px 2px black;
+letter-spacing: 1px;}
+
+.summary{
+height:642px;
+opacity:0.5;
+background-color:grey;
+font-size:18px;
+position:relative;
+ padding: 10px;
+    border-radius:20px;
+    -o-border-radius:20px;
+    -webkit-border-radius:20px;
+    -ms-border-radius:20px;
+    -moz-border-radius:20px;
+margin: 20px 110px auto;
+color:white;
+text-shadow: 3px 2px black;
+font-family: "Times New Roman", Times, serif;
+letter-spacing: 1px;
+animation:slideUp 0.75s .5s cubic-bezier(0.17,.88,.32,1.27) both,
+        fadeIn .25s .5s ease-in both;
+}
+
+@keyframes slideUp {
+    from {transform: translateX(30%);}
+    to {transform:translateX(-2%);}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.dwnbtn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.dwnbtn{
+align:center;
+padding: 7px 10px;
+background-color:#b30000;
+color:white;
+border-radius:8px;
+}
+
+.abtpage{
+opacity:0.9;
+position:relative;
+height: 570px;
+margin: 15px 0px auto;
+padding: 10px;
+width:970px;
+color:white;
+text-shadow: 3px 2px black;
+font-family: "Times New Roman", Times, serif;
+letter-spacing: 1px;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@-webkit-keyframes flipInY {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px);
+            transform: perspective(400px);
+  }
+}
+
+@keyframes flipInY {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px);
+            transform: perspective(400px);
+  }
+}
+
+.flipInY {
+  -webkit-backface-visibility: visible !important;
+          backface-visibility: visible !important;
+  -webkit-animation-name: flipInY;
+          animation-name: flipInY;
+}
+
+</style>
+
+</script>
+</head>
+<body>
+<nav class = "navbar navbar-inverse">
+    <div class="collapse navbar-collapse">
+     
+
+<ul class=  "nav navbar-nav navbar-right">
+      <li><a href="https://www.googleplus.com"><i class="fa fa-lg fa-google-plus "></i></a></li>
+   
+      <li><a href="https://www.facebook.com/"><i class="fa  fa-lg fa-facebook "></i></a></li>
+        
+      <li><a href="https://www.linkedin.com"><i class="fa fa-lg fa-linkedin "></i></a></li>
+      </ul>
+<ul class = "nav navbar-nav navbar-left">
+       <li><a href="#"><img src="icon.png"></a></li>
+       <li><a href="#"><h2><b>&lt;MANYAM PRATYUSHA&gt;<br /></b></h2></a></li>
+</ul>
+      <ul class = "nav navbar-nav navbar-right">
+         <li><a href = "index.html"><h4><span class="glyphicon glyphicon-home">&nbsp;</span>Home</h4></a></li>
+         <li><a href = "about.html"><h4>About</h4></a></li>
+         <li><a href = "skills.html"><h4>Skills</h4></a></li>
+         <li><a href = "work.html"><h4>Work</h4></a></li>
+<li><a href = "contact.html"><h4>Contact</h4></a></li>
+         <li><a href = "#"></a></li>         
+      </ul>
+</nav>
+<div class="summary" style="float:left;">
+<img src="abtme.png" style="width:300px;height:150px;">
+<br><br>
+<ul>
+  <li>1+ years of industry experience.</li>
+  <li>Meticulous attention to detail.</li>
+  <li>Hands-on multitasker.</li>
+  <li>Works well under constraints.</li>
+  <li>Reputation for timely delivery.</li>
+</ul> <br> 
+  <img src="resum.png" style="width:50px;height:60px;">
+<button class="button dwnbtn" onClick="parent.location='PratyushaResume.pdf'"><h4>Download Resume!</h4></button><br><br>
+<h3>Find me here:</h3>&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/Pratyusha5"><i class="fa fa-lg fa-github "></i></a>&nbsp;&nbsp;&nbsp;
+<a href="https://www.skype.com/en/"><i class="fa fa-lg fa-skype "></i></a>&nbsp;&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/pratyusha-manyam"><i class="fa fa-lg fa-linkedin "></i></a>
+</div>
+
+<div class="abtpage" style="float:left;">
+
+ <h1> MY EXPERTISE...</h1>
+ <h3 style="text-align:center;">I have got chops in all phases of development.</h3>
+<div style="width:310px; float:left; margin-left:20px;">
+ <img src="uides.png" style="width:180px; height:180px; margin-left:20px; margin-top:30px;"><br>
+<div class="flipInY animated">
+ <p><h3>I design interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist who truly believes that less is more.</h3></p>
+</div></div>
+<div style="width:310px; float:left;">
+<img src="bckdes.jpg" style="width:180px; height:180px; margin-left:60px; margin-top:30px;"><br> 
+<div class="flipInY animated">
+<p><h3 style="margin-left:80px;">I design in the browser with HTML, CSS and a touch of JavaScript. I also use .Net and Python for back-end development.</h3></p>
+</div></div>
+<div style="width:310px; float:left;">
+<img src="clodes.jpg" style="width:180px; height:180px; margin-left:60px; margin-top:30px;"><br> 
+<div class="flipInY animated">
+<p><h3 style="margin-left:100px;">I develop web applications to be hosted on cloud environment using HTML, Flask and cloud services like IBM-bluemix, <br>Amazon-AWs.</h3></p>
+</div></div>
+</div>
+</div>
+</body>
+</html>
